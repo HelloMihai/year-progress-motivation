@@ -1,0 +1,78 @@
+/* App.css */
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Atma', sans-serif;
+  user-select: none;
+  pointer-events: none;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.months {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.month-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bar {
+  position: relative;
+  width: 30px;
+  height: 150px;
+  border: 0px solid white;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #46cc8b;
+}
+
+.progress-fill {
+  position: absolute;
+  width: 100%;
+  transition: height 0.3s ease;
+}
+
+.month-text {
+  position: absolute;
+  top: 0;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  color: white;
+}
