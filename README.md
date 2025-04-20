@@ -1,8 +1,14 @@
 # YearProgressMotivation
 
+## clone repo
+```
+git clone git@github.com:HelloMihai/year-progress-motivation.git
+cd year-progress-motivation
+```
+
 ## FOR PRODUCTION RUN
 ```
-cd yourpath/app/
+cd yourpath/year-progress-motivation/
 docker build -t vite-app .
 docker run -p 3000:80 vite-app
 ```
@@ -30,7 +36,7 @@ export default defineConfig({
 
 RUN COMMANDS
 ```
-cd yourpath/app/
+cd yourpath/year-progress-motivation/
 docker build -f Dockerfile.dev -t vite-app-dev .
 docker run -it --rm -v "$(pwd):/app" -v /app/node_modules -p 5173:5173 vite-app-dev
 ```
