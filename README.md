@@ -1,5 +1,7 @@
 # YearProgressMotivation
 
+![2025-04-19_22-25-25](https://github.com/user-attachments/assets/337889ac-c047-4e29-8d5d-f7baf55d67fc)
+
 ## clone repo
 ```
 git clone git@github.com:HelloMihai/year-progress-motivation.git
