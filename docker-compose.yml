@@ -1,0 +1,14 @@
+## start app with this command in the same folder as this docker-compose.yml file
+## $ docker compose up --build -d
+## open browser to http://localhost:3000 or from by machines IP http://192.168.x.x:3000 
+
+version: "3.8"
+
+services:
+  vite-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80" # change to your desired available port
+    container_name: vite-app
