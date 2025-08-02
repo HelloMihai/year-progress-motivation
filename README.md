@@ -43,14 +43,15 @@ export default defineConfig({
 ```
 
 ## allow custom server urls.  Add to `allowedHosts` in `vite.config.js`
-export default defineConfig({
-  plugins: [react()],
+```
+...
   server: {
     host: '0.0.0.0', // <== this is the key
     port: 5173,
     allowedHosts: ['localhost', 'another.host']
   }
-})
+...
+```
 
 RUN COMMANDS
 ```
