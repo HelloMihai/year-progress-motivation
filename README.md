@@ -1,8 +1,22 @@
 # YearProgressMotivation
 
-## FOR PRODUCTION RUN
+![2025-04-19_22-25-25](https://github.com/user-attachments/assets/337889ac-c047-4e29-8d5d-f7baf55d67fc)
+
+## clone repo
 ```
-cd yourpath/app/
+git clone git@github.com:HelloMihai/year-progress-motivation.git
+cd year-progress-motivation
+```
+
+## Docker
+```
+cd year-progress-motivation
+docker compose up --build -d
+```
+
+## normal static run
+```
+cd year-progress-motivation
 docker build -t vite-app .
 docker run -p 3000:80 vite-app
 ```
@@ -40,7 +54,7 @@ export default defineConfig({
 
 RUN COMMANDS
 ```
-cd yourpath/app/
+cd year-progress-motivation
 docker build -f Dockerfile.dev -t vite-app-dev .
 ```
 run 
