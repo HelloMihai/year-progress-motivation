@@ -28,10 +28,31 @@ export default defineConfig({
 })
 ```
 
+## allow custom server urls.  Add to `allowedHosts` in `vite.config.js`
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    host: '0.0.0.0', // <== this is the key
+    port: 5173,
+    allowedHosts: ['localhost', 'another.host']
+  }
+})
+
 RUN COMMANDS
 ```
 cd yourpath/app/
 docker build -f Dockerfile.dev -t vite-app-dev .
+```
+run 
+```
 docker run -it --rm -v "$(pwd):/app" -v /app/node_modules -p 5173:5173 vite-app-dev
+```
+or run in foreground (stops with terminal session)
+```
+docker run -d --name vite-app-dev \
+  -v "$(pwd):/app" \
+  -v vite_node_modules:/app/node_modules \
+  -p 5173:5173 \
+  vite-app-dev
 ```
 open http://localhost:5173
